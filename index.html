@@ -6,108 +6,147 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JobsNET | Cadastro</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <header>
-        <img src="img/SVG/logo-jobsnet.svg" alt="Logo JobsNET">
+    <header id="header">
+        <div class="container">
+            <a href="index.html">
+                <img class="logo" src="img/SVG/logo-jobsnet.svg" alt="Logo JobsNET">
+            </a>
 
-        <ul>
-            <li>Achar Vagas</li>
-            <li>Publicar Vagas</li>
-            <li>Cadastrar CV</li>
-            <li>Sobre</li>
-        </ul>
+            <ul class="menu">
+                <li>
+                    <a href="#">Achar Vagas</a>
+                </li>
+                <li>
+                    <a href="#">Publicar Vagas</a>
+                </li>
+                <li>
+                    <a href="#">Cadastrar CV</a>
+                </li>
+                <li>
+                    <a href="#">Sobre</a>
+                </li>
+            </ul>
+        </div>
     </header>
 
-    <section>
-        <h1>O Portal nº1 de Empregos no Brasil!</h1>
-        <p>Cadastre agora mesmo seu currículo. Temos muitas empresas buscando profissionais qualificados para preencher
-            suas vagas e oportunidades de trabalho.</p>
+    <section id="chamada">
+        <div class="container">
+            <h1>O Portal nº1<br> de Empregos no Brasil!</h1>
+            <p>Cadastre agora mesmo seu currículo. Temos muitas empresas buscando profissionais qualificados para
+                preencher
+                suas vagas e oportunidades de trabalho.</p>
+        </div>
     </section>
 
-    <section>
-        <form>
-            <fieldset>
-                <legend>DADOS PESSOAIS</legend>
-                <label>Nome Completo:</label>
-                <input type="text">
+    <section id="formulario">
+        <div class="container">
+            <h2>Cadastre seu currículo!</h2>
+            <form>
+                <fieldset class="bloco-dados">
+                    <legend class="legenda">DADOS PESSOAIS</legend>
 
-                <label>Cargo Pretendido:</label>
-                <input type="text">
+                    <div class="form-row">
+                        <label class="col50">
+                            <span class="description">Nome Completo: *</span>
+                            <input type="text" class="textInput" placeholder="Digite seu nome completo">
+                        </label>
+                        <label class="col50">
+                            <span class="description">Cargo Pretendido: *</span>
+                            <input type="text" class="textInput" placeholder="Ex: Engenheiro de Software">
+                        </label>
+                    </div>
 
-                <label>Data de Nascimento:</label>
-                <input type="date">
+                    <div class="form-row">
+                        <label class="col25">
+                            <span class="description">Data de Nascimento: *</span>
+                            <input type="date">
+                        </label>
+                        <label class="col25">
+                            <span class="description">Estado Civil:</span>
+                            <select>
+                                <option value="solteiro">Solteiro</option>
+                                <option value="casado">Casado</option>
+                            </select>
+                        </label>
+                        <label class="col25">
+                            <span class="description">Sexo:</span>
+                            <select>
+                                <option value="m">Masculino</option>
+                                <option value="f">Feminino</option>
+                            </select>
+                        </label>
+                    </div>
 
-                <label>Estado Civil:</label>
-                <select>
-                    <option value="solteiro">Solteiro</option>
-                    <option value="casado">Casado</option>
-                </select>
+                    <div class="form-row">
+                        <label class="col25">
+                            <span class="description">CEP: *</span>
+                            <input type="text" class="textInput" placeholder="Ex: 00000-000">
+                        </label>
+                        <label class="col75">
+                            <span class="description">Endereço: *</span>
+                            <input type="text" class="textInput">
+                        </label>
+                        <label class="col25">
+                            <span class="description">Número: *</span>
+                            <input type="text" class="textInput">
+                        </label>
+                    </div>
 
-                <label>Sexo:</label>
-                <select>
-                    <option value="m">Masculino</option>
-                    <option value="f">Feminino</option>
-                </select>
+                    <div class="form-row">
+                        <label class="col33">
+                            <span class="description">Bairro:</span>
+                            <input type="text" class="textInput">
+                        </label>
+                        <label class="col33">Cidade:
+                            <input type="text" class="textInput">
+                        </label>
+                        <label class="col33">Estado:
+                            <input type="text" class="textInput">
+                        </label>
+                    </div>
 
-                <label>Endereço:</label>
-                <input type="text">
-
-                <label>Bairro:</label>
-                <input type="text">
-
-                <label>Cidade:</label>
-                <input type="text">
-
-                <label>CEP:</label>
-                <input type="text">
-
-                <label>Telefone Fixo:</label>
-                <input type="tel">
-
-                <label>Telefone Fixo 2:</label>
-                <input type="tel">
-
-                <label>Celular:</label>
-                <input type="tel">
-
-                <label>Contato:</label>
-                <input type="text">
-
-                <label>E-mail:</label>
-                <input type="email">
-
-            </fieldset>
-
-            <fieldset>
-                <legend>DOCUMENTOS</legend>
-
-                <label>Identidade:</label>
-                <input type="text">
-
-                <label>CPF:</label>
-                <input type="text">
-
-                <label>Possui Veículo:</label>
-                <select>
-                    <option value="sim">Sim</option>
-                    <option value="nao">Não</option>
-                </select>
-
-                <label>HABILITAÇÃO:</label>
-                <select>
-                    <option value="m"> A</option>
-                    <option value="f"> B</option>
-                    <option value="ab">AB</option>
-                </select>
-
-            </fieldset>
-
-            <button type="submit">Enviar</button>
-
-        </form>
+                    <label>Telefone Fixo:</label>
+                    <input type="tel">
+                    <label>Telefone Fixo 2:</label>
+                    <input type="tel">
+                    <label>Celular:</label>
+                    <input type="tel">
+                    <label>Contato:</label>
+                    <input type="text" class="textInput">
+                    <label>E-mail:</label>
+                    <input type="email">
+                </fieldset>
+                <fieldset class="bloco-dados">
+                    <legend class="legenda">DOCUMENTOS</legend>
+                    <label>Identidade:</label>
+                    <input type="text" class="textInput">
+                    <label>CPF:</label>
+                    <input type="text" class="textInput">
+                    <label>Possui Veículo:</label>
+                    <select>
+                        <option value="sim">Sim</option>
+                        <option value="nao">Não</option>
+                    </select>
+                    <label>HABILITAÇÃO:</label>
+                    <select>
+                        <option value="m"> A</option>
+                        <option value="f"> B</option>
+                        <option value="ab">AB</option>
+                    </select>
+                </fieldset>
+                <button type="submit" class="enviar">Enviar</button>
+            </form>
+        </div>
     </section>
 
 </body>
