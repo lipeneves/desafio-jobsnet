@@ -127,7 +127,7 @@ a{
     margin-bottom: 5px;
 }
 
-#formulario input{
+#formulario input, select{
     display: block;
     width: 100%;
     height: calc(1.5em + 1rem + 2px);

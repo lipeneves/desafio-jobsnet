@@ -104,45 +104,69 @@
 
                     <div class="form-row">
                         <label class="col33">
-                            <span class="description">Bairro:</span>
+                            <span class="description">Bairro: *</span>
                             <input type="text" class="textInput">
                         </label>
-                        <label class="col33">Cidade:
+                        <label class="col33">
+                            <span class="description">Cidade: *</span>
                             <input type="text" class="textInput">
                         </label>
-                        <label class="col33">Estado:
+                        <label class="col33">
+                            <span class="description">Estado: *</span>
                             <input type="text" class="textInput">
                         </label>
                     </div>
 
-                    <label>Telefone Fixo:</label>
-                    <input type="tel">
-                    <label>Telefone Fixo 2:</label>
-                    <input type="tel">
-                    <label>Celular:</label>
-                    <input type="tel">
-                    <label>Contato:</label>
-                    <input type="text" class="textInput">
-                    <label>E-mail:</label>
-                    <input type="email">
+                    <div class="form-row">
+                        <label class="col50">
+                            <span class="description">E-mail: *</span>
+                            <input type="email" placeholder="Ex: exemplo@exemplo.com">
+                        </label>
+                    </div>
+
+                    <div class="form-row">
+                        <label class="col33">
+                            <span class="description">Celular: *</span>
+                            <input type="tel" placeholder="Ex: (00) 00000-0000">
+                        </label>
+                        <label class="col33">
+                            <span class="description">Telefone Fixo 1:</span>
+                            <input type="tel" placeholder="Ex: (00) 0000-0000">
+                        </label>
+                        <label class="col33">
+                            <span class="description">Telefone Fixo 2:</span>
+                            <input type="tel" placeholder="Ex: (00) 0000-0000">
+                        </label>
+                    </div>
+
                 </fieldset>
                 <fieldset class="bloco-dados">
                     <legend class="legenda">DOCUMENTOS</legend>
-                    <label>Identidade:</label>
-                    <input type="text" class="textInput">
-                    <label>CPF:</label>
-                    <input type="text" class="textInput">
-                    <label>Possui Veículo:</label>
-                    <select>
-                        <option value="sim">Sim</option>
-                        <option value="nao">Não</option>
-                    </select>
-                    <label>HABILITAÇÃO:</label>
-                    <select>
-                        <option value="m"> A</option>
-                        <option value="f"> B</option>
-                        <option value="ab">AB</option>
-                    </select>
+                    <div class="form-row">
+                        <label class="col25">
+                            <span class="description">Identidade: *</span>
+                            <input type="text" class="textInput">
+                        </label>
+                        <label class="col25">
+                            <span class="description">CPF: *</span>
+                            <input type="text" class="textInput" placeholder="Ex: 000.000.000-00">
+                        </label>
+                        <label class="col25">
+                            <span class="description">Possui Veículo:</span>
+                            <select>
+                                <option value="sim">Sim</option>
+                                <option value="nao">Não</option>
+                            </select>
+                        </label>
+                        <label class="col25">
+                            <span class="description">HABILITAÇÃO:</span>
+                            <select>
+                                <option value="m">A</option>
+                                <option value="f">B</option>
+                                <option value="ab">AB</option>
+                            </select>
+                        </label>
+                    </div>
                 </fieldset>
                 <button type="submit" class="enviar">Enviar</button>
             </form>
