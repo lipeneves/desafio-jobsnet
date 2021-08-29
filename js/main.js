@@ -7,13 +7,6 @@ const preencherFormulario = (endereco) => {
     document.getElementById('estado').value = endereco.uf;
 }
 
-const limparFormulario = () => {
-    document.getElementById('endereco').value = '';
-    document.getElementById('bairro').value = '';
-    document.getElementById('cidade').value = '';
-    document.getElementById('estado').value = '';
-}
-
 const pesquisarCep = async () => {
     const cep = document.getElementById("cep").value;
     const url = `http://viacep.com.br/ws/${cep}/json/`;
@@ -23,7 +16,6 @@ const pesquisarCep = async () => {
     const endereco = await dados.json();
 
     if (endereco.hasOwnProperty('erro')) {
-        limparFormulario();
         erroCep.style.display = "inline-block";
     } else {
         preencherFormulario(endereco);
