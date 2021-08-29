@@ -16,7 +16,7 @@ const limparFormulario = () => {
 
 const pesquisarCep = async () => {
     const cep = document.getElementById("cep").value;
-    const url = `https://viacep.com.br/ws/${cep}/json/`;
+    const url = `http://viacep.com.br/ws/${cep}/json/`;
     const erroCep = document.getElementById("erroCEP");
 
     const dados = await fetch(url);
