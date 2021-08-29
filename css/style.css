@@ -76,7 +76,7 @@ a{
 
 #formulario .container{
     background: white;
-    top: -185px;
+    top: -180px;
     position: relative;
     padding: 10px 20px;
     border-radius: 7px;
@@ -163,4 +163,22 @@ a{
     font-weight: 600;
     cursor: pointer;
     text-align: center;
+}
+
+#formulario #erroCEP{
+    font-size: .9rem;
+    color: red;
+    display: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }

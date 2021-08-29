@@ -58,18 +58,18 @@
                     <div class="form-row">
                         <label class="col50">
                             <span class="description">Nome Completo: *</span>
-                            <input type="text" class="textInput" placeholder="Digite seu nome completo">
+                            <input type="text" class="textInput" placeholder="Digite seu nome completo" required>
                         </label>
                         <label class="col50">
                             <span class="description">Cargo Pretendido: *</span>
-                            <input type="text" class="textInput" placeholder="Ex: Engenheiro de Software">
+                            <input type="text" class="textInput" placeholder="Ex: Engenheiro de Software" required>
                         </label>
                     </div>
 
                     <div class="form-row">
                         <label class="col25">
                             <span class="description">Data de Nascimento: *</span>
-                            <input type="date">
+                            <input type="date" required>
                         </label>
                         <label class="col25">
                             <span class="description">Estado Civil:</span>
@@ -88,46 +88,47 @@
                     </div>
 
                     <div class="form-row">
-                        <label class="col25">
+                        <label class="col25" for="cep">
                             <span class="description">CEP: *</span>
-                            <input type="text" class="textInput" placeholder="Ex: 00000-000">
+                            <input id="cep" type="number" class="textInput" placeholder="Apenas números">
+                            <span id="erroCEP">CEP Inválido</span>
                         </label>
                         <label class="col75">
                             <span class="description">Endereço: *</span>
-                            <input type="text" class="textInput">
+                            <input type="text" class="textInput" id="endereco" required>
                         </label>
                         <label class="col25">
                             <span class="description">Número: *</span>
-                            <input type="text" class="textInput">
+                            <input type="text" class="textInput" required>
                         </label>
                     </div>
 
                     <div class="form-row">
                         <label class="col33">
                             <span class="description">Bairro: *</span>
-                            <input type="text" class="textInput">
+                            <input type="text" class="textInput" id="bairro" required>
                         </label>
                         <label class="col33">
                             <span class="description">Cidade: *</span>
-                            <input type="text" class="textInput">
+                            <input type="text" class="textInput" id="cidade" required>
                         </label>
                         <label class="col33">
                             <span class="description">Estado: *</span>
-                            <input type="text" class="textInput">
+                            <input type="text" class="textInput" id="estado" required>
                         </label>
                     </div>
 
                     <div class="form-row">
                         <label class="col50">
                             <span class="description">E-mail: *</span>
-                            <input type="email" placeholder="Ex: exemplo@exemplo.com">
+                            <input type="email" placeholder="Ex: exemplo@exemplo.com" required>
                         </label>
                     </div>
 
                     <div class="form-row">
                         <label class="col33">
                             <span class="description">Celular: *</span>
-                            <input type="tel" placeholder="Ex: (00) 00000-0000">
+                            <input type="tel" placeholder="Ex: (00) 00000-0000" required>
                         </label>
                         <label class="col33">
                             <span class="description">Telefone Fixo 1:</span>
@@ -144,12 +145,12 @@
                     <legend class="legenda">DOCUMENTOS</legend>
                     <div class="form-row">
                         <label class="col25">
-                            <span class="description">Identidade: *</span>
+                            <span class="description">Identidade: *</span required>
                             <input type="text" class="textInput">
                         </label>
                         <label class="col25">
                             <span class="description">CPF: *</span>
-                            <input type="text" class="textInput" placeholder="Ex: 000.000.000-00">
+                            <input type="text" class="textInput" placeholder="Ex: 000.000.000-00" required>
                         </label>
                         <label class="col25">
                             <span class="description">Possui Veículo:</span>
@@ -161,9 +162,10 @@
                         <label class="col25">
                             <span class="description">HABILITAÇÃO:</span>
                             <select>
-                                <option value="m">A</option>
-                                <option value="f">B</option>
-                                <option value="ab">AB</option>
+                                <option value="m">Habilitação A</option>
+                                <option value="f">Habilitação B</option>
+                                <option value="ab">Habilitação AB</option>
+                                <option value="ab">Não sou habilitado</option>
                             </select>
                         </label>
                     </div>
@@ -172,6 +174,8 @@
             </form>
         </div>
     </section>
+
+    <script src="js/main.js"></script>
 
 </body>
 
